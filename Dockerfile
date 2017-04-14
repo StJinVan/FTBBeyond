@@ -2,7 +2,7 @@ FROM openjdk:alpine
 MAINTAINER Jin Van <usconan@gmail.com>
 
 ENV URL="http://ftb.cursecdn.com/FTB2/modpacks/FTBBeyond"
-ENV VERSION=“1_2_1”
+ENV VERSION=“1_5_3”
 ENV SERVER_FILE="FTBBeyondServer.zip"
 ENV SERVER_PORT 25565
 
@@ -14,7 +14,7 @@ RUN adduser -D minecraft && \
     mkdir -p /minecraft/world && \
     mkdir -p /minecraft/cfg && \
     mkdir -p /minecraft/backups &&\
-    curl -SLO http://ftb.cursecdn.com/FTB2/modpacks/FTBBeyond/1_2_1/FTBBeyondServer.zip  && \
+    curl -SLO http://ftb.cursecdn.com/FTB2/modpacks/FTBBeyond/1_5_3/FTBBeyondServer.zip  && \
     unzip ${SERVER_FILE} && \
     chmod u+x *.sh && \
     echo "eula=true" > /minecraft/eula.txt && \
