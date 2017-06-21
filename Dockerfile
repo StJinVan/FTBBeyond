@@ -14,7 +14,7 @@ RUN adduser -D minecraft && \
     mkdir -p /minecraft/world && \
     mkdir -p /minecraft/cfg && \
     mkdir -p /minecraft/backups &&\
-    curl -SLO http://ftb.cursecdn.com/FTB2/modpacks/FTBBeyond/1_7_0/FTBBeyondServer.zip  && \
+    curl -SLO http://ftb.cursecdn.com/FTB2/modpacks/FTBBeyond/1_8_0/FTBBeyondServer.zip  && \
     unzip FTBBeyondServer.zip && \
     chmod u+x *.sh && \
     echo "eula=true" > /minecraft/eula.txt && \
